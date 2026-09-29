@@ -38,6 +38,7 @@ async def test_items_are_keyed_by_dataset_and_example(
     assert item["metadata"] == {
         "source": "contract",
         "index": 1,
+        "weight": 1.0,
         "evalr": {"example_id": "example-1"},
     }
     assert item["sourceTraceId"] == f"{1:032x}"

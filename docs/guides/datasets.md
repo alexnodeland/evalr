@@ -60,7 +60,7 @@ print(support.version)
 180e6a296f478c0f
 ```
 
-- **`version`** is a hash of the examples' content, independent of their order. Any change to any example changes it, so a trained judge records exactly the data it was trained on.
+- **`version`** is a hash of the examples' content, independent of their order. Any change to any example changes it, so a trained judge records exactly the data it was trained on. Numbers are hashed by value, as JSON reads them: `1.0` and `1` are the same number.
 - **Ids are unique**: two examples with one id raise `DuplicateExample`. A verdict type evalr cannot judge raises `UnsupportedField`.
 - **`labelled()`** keeps the examples with a verdict from people, and **`filter(predicate)`** any others you choose. Both return a dataset of the same name and types.
 - **`records()`** turns the examples into JSON records, and **`Dataset.from_records(name, records, input_type=, verdict_type=)`** back. The stores build on them.
