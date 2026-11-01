@@ -1,3 +1,6 @@
+> [!IMPORTANT]
+> **evalr has moved to [lattice](https://github.com/alexnodeland/lattice/tree/main/packages/evalr).** It is developed there now, alongside artifactr, reflexr, relayr, grantr, portalr and stackr, and released to PyPI as [`evalr`](https://pypi.org/project/evalr/). Docs are at [lattice.alexnodeland.com/evalr](https://lattice.alexnodeland.com/evalr/). This repository is archived and kept for its history.
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/assets/brand/banner-dark.svg">
   <img alt="evalr: judges that give typed verdicts, trained on people's feedback and measured against it." src="docs/assets/brand/banner-light.svg" width="100%">
